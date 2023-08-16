@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: peachpuff;
+}
+
+h1 {
+    margin-top: 2rem;
+}
+
+.gameField {
+    width: 80%;
+    height: 800px;
+    border: 2px solid;
+    display: grid;
+    grid-template-columns: repeat(16, 16px);
+}
+
+.square {
+    width: 16px;
+    height: 16px;
+    border: 1px solid;
+}

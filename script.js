@@ -20,6 +20,20 @@ div.insertAdjacentElement('beforebegin', header)
 
 //create a game-field in the wrapper element
 const gameField = document.createElement('div');
-gameField.id = 'gameField';
+gameField.classList.add('gameField');
 
 div.appendChild(gameField);
+
+//creating a grid with a 16x16 square of div's
+const NumRows = 16;
+const NumCols = 16;
+
+for (let row = 0; row < NumRows; row++) {
+    for(let col = 0;col < NumCols; col++){
+        const square = document.createElement('div');
+        square.classList.add('square');
+        div.appendChild(square);
+    }
+}
+
+//
