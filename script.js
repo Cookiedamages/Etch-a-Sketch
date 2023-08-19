@@ -29,11 +29,22 @@ const NumRows = 16;
 const NumCols = 16;
 
 for (let row = 0; row < NumRows; row++) {
+
     for(let col = 0;col < NumCols; col++){
         const square = document.createElement('div');
         square.classList.add('square');
-        div.appendChild(square);
+        gameField.appendChild(square);
     }
 }
 
-//
+//changing square's color while hovering
+
+function changeColor (event) {
+    event.target.style.backgroundColor = 'black'
+}
+
+const squares = document.querySelectorAll('.square');
+
+squares.forEach(square => {
+    square.addEventListener('mouseover', changeColor);
+});
