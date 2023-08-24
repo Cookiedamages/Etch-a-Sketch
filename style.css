@@ -21,8 +21,6 @@ h1 {
     border: 2px solid;
     display: grid;
     grid-template-columns: repeat(16, 16px);
-
-    background-color: white;
 }
 
 
@@ -30,4 +28,5 @@ h1 {
     width: 16px;
     height: 16px;
     border: 1px solid;
+    background-color: white;
 }
